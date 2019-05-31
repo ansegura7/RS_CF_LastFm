@@ -1,10 +1,10 @@
 # Recommender Systems for Last.FM
-Recommendation system with collaborative filtering created with Apache Mahout. The system uses a Music Recommendation Dataset for Research as input, but you can train and predict with any other dataset.
+Recommendation system with collaborative filtering created with Apache Mahout. The system uses a Music Recommendation Dataset for Research as input, but you can train it and predict recommendations with any other dataset.
 
 ## Data
 The original dataset contains <user, timestamp, artist, song> tuples collected from Last.fm API, using the user.getRecentTracks() method. This dataset represents the whole listening habits (till May, 5th 2009) for nearly 1,000 users.
 
-This pre-processed dataset contains <user, song, rating> tuples from the number of times a song was heard on Last.fm.
+This pre-processed dataset contains <user, song, rating> tuples. The rating field was calculated by normalizing the number of times a user listened to songs by an artist on Last.fm.
 
 Table format: **u.data.csv**
 

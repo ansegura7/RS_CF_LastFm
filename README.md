@@ -1,4 +1,4 @@
-# Recommender Systems for Last.FM
+# Recommender Systems for Last.fm
 Recommendation system with collaborative filtering created with Apache Mahout. The system uses a Music Recommendation Dataset for Research as input, but you can train it and predict recommendations with any other dataset.
 
 ## Data
@@ -18,26 +18,22 @@ Table format: **u.data.csv**
 
 Permalink: https://www.dtic.upf.edu/~ocelma/MusicRecommendationDataset/lastfm-1K.html
 
-## Output
-Once trained the model, the system can make recommendations (on demand) for users, as follows:
+## Model Tuning
+- The training results of the user-based collaborative filtering model are shown below:
 
-| user id | item id | rating |
-| -- | -- | -- |
-| 1 | 130710 | 4.366509 |
-| 1 | 114674 | 3.0061495 |
-| 1 | 143895 | 2.9370918 |
-| 1 | 103116 | 2.8950827 |
-| 1 | 104052 | 2.7250140 |
-| 1 | 135747 | 2.6153402 |
-| 1 | 135743 | 2.5869453 |
-| 1 | 102936 | 2.5726979 |
-| 1 | 113273 | 2.5512722 |
-| 1 | 114145 | 2.5447776 |
+![User-Based 1 - Model tuning](https://raw.githubusercontent.com/ansegura7/RS_CF_LastFm/master/images/ub-cf-train-test.png)
+
+![User-Based 2 - Model tuning](https://raw.githubusercontent.com/ansegura7/RS_CF_LastFm/master/images/ub-cf-knn.png)
+
+- The training results of the item-based collaborative filtering model are shown below:
+
+![Item-Based 1 - Model tuning](https://raw.githubusercontent.com/ansegura7/RS_CF_LastFm/master/images/ib-cf-train-test.png)
 
 ## Technologies and Techniques
 - Java (JDK 1.7)
 - Eclipse IDE
 - Apache Mahout
+- Maven dependencies
 
 ## Program Execution Rules
 The project has an executable in the 'jar' folder. The JAR name is: RS_CF_LastFm-v1.jar and you must send as input parameters:
@@ -56,6 +52,22 @@ Execution examples:
     java -jar RS_CF_LastFm-v1.jar 10 ../data/in/u.data.csv ../data/out/output.txt ITEM JACCARD
 ```
 The .JAR program must be run with Java 7 or higher.
+
+## Program Output
+Once trained the model, the system can make recommendations (on demand) for users, as follows:
+
+| user id | item id | rating |
+| -- | -- | -- |
+| 1 | 130710 | 4.366509 |
+| 1 | 114674 | 3.0061495 |
+| 1 | 143895 | 2.9370918 |
+| 1 | 103116 | 2.8950827 |
+| 1 | 104052 | 2.7250140 |
+| 1 | 135747 | 2.6153402 |
+| 1 | 135743 | 2.5869453 |
+| 1 | 102936 | 2.5726979 |
+| 1 | 113273 | 2.5512722 |
+| 1 | 114145 | 2.5447776 |
 
 ## Contributing and Feedback
 Any kind of feedback/criticism would be greatly appreciated (algorithm design, documentation, improvement ideas, spelling mistakes, etc...).

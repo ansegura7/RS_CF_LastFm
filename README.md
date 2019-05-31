@@ -1,25 +1,5 @@
 # Recommender Systems for Last.FM
-Recommendation system with collaborative filtering created with Apache Mahout. The system uses a Music Recommendation Dataset for Research as input, but you can train with any other dataset.
-
-## Run
-A .JAR file of the program was created. The JAR name is: RS_CF_LastFm-v1.jar and you must send as input parameters:
-- The ID of the user to whom you want to give recommendations
-- The filepath to the input data
-- The filepath to the output file
-- The type of collaborative filtering
-- The similarity metric
-- The number of neighbors for the KNN algorithm (only applies with user-based filtering)
-- The number of recommendations
-
-Execution examples:
-```
-    java -jar RS_CF_LastFm-v1.jar USER_ID INPUT_FILE OUTPUT_FILE [USER|ITEM] [COSINE|PEARSON|JACCARD] K_NN N_RECOMMENDATIONS
-
-    java -jar RS_CF_LastFm-v1.jar 1 ../data/in/u.data.csv ../data/out/output.txt USER COSINE 101 20
-    java -jar RS_CF_LastFm-v1.jar 10 ../data/in/u.data.csv ../data/out/output.txt ITEM PEARSON 0 10
-```
-
-The .JAR program must be run with Java 7 or higher.
+Recommendation system with collaborative filtering created with Apache Mahout. The system uses a Music Recommendation Dataset for Research as input, but you can train and predict with any other dataset.
 
 ## Data
 The original dataset contains <user, timestamp, artist, song> tuples collected from Last.fm API, using the user.getRecentTracks() method. This dataset represents the whole listening habits (till May, 5th 2009) for nearly 1,000 users.
@@ -37,6 +17,29 @@ Table format: **u.data.csv**
 | 15 | 107070 | 3.9 |
 
 Permalink: https://www.dtic.upf.edu/~ocelma/MusicRecommendationDataset/lastfm-1K.html
+
+## Technologies and Techniques
+- Java (JDK 1.7)
+- Eclipse IDE
+- Apache Mahout
+
+## Program Execution Rules
+The project has an executable in the 'jar' folder. The JAR name is: RS_CF_LastFm-v1.jar and you must send as input parameters:
+- User ID for which recommendations are to be computed
+- Filepath to the input data
+- Filepath to the output file
+- Type of collaborative filtering: [USER | ITEM]
+- Similarity metric: [COSINE | PEARSON | JACCARD]
+- Number of neighbors for the KNN algorithm (only applies with user-based filtering). Default value: 51
+- Desired number of recommendations. Default value: 10
+
+Execution examples:
+```
+    java -jar RS_CF_LastFm-v1.jar 1 ../data/in/u.data.csv ../data/out/output.txt USER COSINE 101 20
+    java -jar RS_CF_LastFm-v1.jar 10 ../data/in/u.data.csv ../data/out/output.txt ITEM PEARSON 0 10
+    java -jar RS_CF_LastFm-v1.jar 10 ../data/in/u.data.csv ../data/out/output.txt ITEM JACCARD
+```
+The .JAR program must be run with Java 7 or higher.
 
 ## Contributing and Feedback
 Any kind of feedback/criticism would be greatly appreciated (algorithm design, documentation, improvement ideas, spelling mistakes, etc...).

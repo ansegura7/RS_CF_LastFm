@@ -8,7 +8,7 @@ This pre-processed dataset contains <user, song, rating> tuples from the number 
 
 Table format: **u.data.csv**
 
-| user id | item id | rating
+| user id | item id | rating |
 | -- | -- | -- |
 | 1 | 100001 | 5.0 |
 | 3 | 101943 | 4.6 |
@@ -17,6 +17,22 @@ Table format: **u.data.csv**
 | 15 | 107070 | 3.9 |
 
 Permalink: https://www.dtic.upf.edu/~ocelma/MusicRecommendationDataset/lastfm-1K.html
+
+## Output
+Once trained the model, the system can make recommendations (on demand) for users, as follows:
+
+| user id | item id | rating |
+| -- | -- | -- |
+| 1 | 130710 | 4.366509 |
+| 1 | 114674 | 3.0061495 |
+| 1 | 143895 | 2.9370918 |
+| 1 | 103116 | 2.8950827 |
+| 1 | 104052 | 2.7250140 |
+| 1 | 135747 | 2.6153402 |
+| 1 | 135743 | 2.5869453 |
+| 1 | 102936 | 2.5726979 |
+| 1 | 113273 | 2.5512722 |
+| 1 | 114145 | 2.5447776 |
 
 ## Technologies and Techniques
 - Java (JDK 1.7)

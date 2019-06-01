@@ -18,10 +18,10 @@ import org.apache.mahout.cf.taste.recommender.UserBasedRecommender;
 import org.apache.mahout.cf.taste.similarity.ItemSimilarity;
 import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 
-// Program Main Class of Lastfm Recommender
+// Program Main class of Lastfm Recommender
 public class LastfmRecommender {
 	
-	// Main function
+	// Input function of the main class
 	public static void main(String[] args) throws IOException, TasteException {
 		Utilities.showMessage("Start process");
 		

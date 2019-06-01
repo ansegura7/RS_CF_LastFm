@@ -10,14 +10,14 @@ import org.apache.mahout.cf.taste.model.DataModel;
 
 import edu.uniandes.mine.rs.Utilities;
 
-// Test Main Class
+// Main class to calculate the accuracy of the models
 public class LastfmValidation {
 	
 	// Class constants
 	private final static double trainSize = 0.80;
 	private static double testSize = (1 - trainSize);
 	
-	// Main function
+	// Input function of the main class
 	public static void main(String[] args) throws IOException, TasteException {
 		Utilities.showMessage("Start process");
 		String rsType = "USER";

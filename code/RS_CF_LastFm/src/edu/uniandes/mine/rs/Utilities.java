@@ -20,7 +20,7 @@ public class Utilities {
 	public final static boolean debug = true;
 	public final static String separator = "|";
 	
-	// Function that create data mode if file exists
+	// Function that create a data model if file exists
 	public static DataModel createDataModel(String filename) {
 		DataModel model = null;
 		
@@ -41,7 +41,7 @@ public class Utilities {
 		return model;
 	}
 	
-	// Show into a console the list of recommended items
+	// Show the list of recommended items in the console
 	public static void showItemList(Integer userID, List<RecommendedItem> recommendations) {
 		
 		if (recommendations != null) {
@@ -95,7 +95,7 @@ public class Utilities {
 		}
 	}
 	
-	// Show an audit message into a console
+	// Show an audit message in the console
 	public static void showMessage(String msg) {
 		
 		if (debug) {

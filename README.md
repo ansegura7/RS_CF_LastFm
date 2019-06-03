@@ -69,6 +69,13 @@ Once trained the model, the system can make recommendations (on demand) for user
 | 1 | 113273 | 2.5512722 |
 | 1 | 114145 | 2.5447776 |
 
+## Conclusions
+1. Apache Mahout is an excellent fast development framework for Recommender Systems projects. It has a wide variety of Machine Learning algorithms to make predictions (recommendations) and an extensive list of similarity functions.
+2. In static or semi-static scenarios, recommendation systems with items-based collaborative filtering offer better results than those users-based , since it is easier to calculate the similarity between items than between users.
+3. As a general rule, both in the user-based and in the item-based models, the predictive results improved when the models were exposed to more data (75/25 or 80/20), since the Machine Learning algorithm used has more information from which to learn.
+4. The construction of a model items-based takes more time than the construction of a user-based model. However, once the model is built, it makes predictions more quickly and above all, more accurately than the user-based one.
+5. When a new user is created, the user-based recommender model will have a **cold start** for that user, until the user performs enough interactions to be able to look like someone else. Analogously, it occurs for the item-based model when a new item is created.
+
 ## Contributing and Feedback
 Any kind of feedback/criticism would be greatly appreciated (algorithm design, documentation, improvement ideas, spelling mistakes, etc...).
 

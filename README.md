@@ -80,7 +80,7 @@ Once trained the model, the system can make recommendations (on demand) for user
 Any kind of feedback/criticism would be greatly appreciated (algorithm design, documentation, improvement ideas, spelling mistakes, etc...).
 
 ## Authors
-- Created by Andrés Segura Tinoco
+- Created by Andrés Segura Tinoco and Francisco Ariza Benavides
 - Created on May 29, 2019
 
 ## License

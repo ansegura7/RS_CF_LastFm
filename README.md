@@ -1,14 +1,14 @@
 # Recommender Systems for Last.fm
-Recommendation system with collaborative filtering created with Apache Mahout. The system uses a Music Recommendation Dataset for Research as input, but you can train it and predict recommendations with any other dataset.
+Recommendation system with collaborative filtering created with Apache Mahout. The system uses a Music Recommendation Dataset for Research as input, but you can train it and predict recommendations with any other dataset. This project explores the calibration and accuracy of user-based and item-based models.
 
 ## Data
 The original dataset contains <user, timestamp, artist, song> tuples collected from Last.fm API, using the user.getRecentTracks() method. This dataset represents the whole listening habits (till May, 5th 2009) for nearly 1,000 users.
 
-This pre-processed dataset contains <user, song, rating> tuples. The rating field was calculated by normalizing the number of times a user listened to songs by an artist on Last.fm.
+This pre-processed dataset contains <user, artist, rating> tuples. The rating field was calculated by normalizing the number of times a user listened to a specific artist's songs in Last.fm.
 
 Table format: **u.data.csv**
 
-| user id | item id | rating |
+| user id | artist id | rating |
 | -- | -- | -- |
 | 1 | 100001 | 5.0 |
 | 3 | 101943 | 4.6 |
@@ -56,7 +56,7 @@ The .JAR program must be run with Java 7 or higher.
 ## Program Output
 Once trained the model, the system can make recommendations (on demand) for users, as follows:
 
-| user id | item id | rating |
+| user id | artist id | rating |
 | -- | -- | -- |
 | 1 | 130710 | 4.366509 |
 | 1 | 114674 | 3.0061495 |
@@ -80,7 +80,7 @@ Once trained the model, the system can make recommendations (on demand) for user
 Any kind of feedback/criticism would be greatly appreciated (algorithm design, documentation, improvement ideas, spelling mistakes, etc...).
 
 ## Authors
-- Created by Andrés Segura Tinoco and Francisco Ariza Benavides
+- Created by Andrés Segura Tinoco and <a href="https://github.com/FranciscoAriza">Francisco Ariza Benavides</a>
 - Created on May 29, 2019
 
 ## License

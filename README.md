@@ -16,7 +16,7 @@ Table format: **u.data.csv**
 | 11 | 101722 | 3.6 |
 | 15 | 107070 | 3.9 |
 
-Permalink: https://www.dtic.upf.edu/~ocelma/MusicRecommendationDataset/lastfm-1K.html
+<a href="https://www.dtic.upf.edu/~ocelma/MusicRecommendationDataset/lastfm-1K.html" target="_blank">Permalink</a>
 
 ## Model Tuning
 - The training results of the user-based collaborative filtering model are shown below:

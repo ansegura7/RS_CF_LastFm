@@ -40,8 +40,8 @@ The project has an executable in the 'jar' folder. The JAR name is: RS_CF_LastFm
 - User ID for which recommendations are to be computed
 - Filepath to the input data
 - Filepath to the output file
-- Type of collaborative filtering: [USER | ITEM]
-- Similarity metric: [COSINE | PEARSON | JACCARD]
+- Type of collaborative filtering: USER or ITEM
+- Similarity metric: COSINE, PEARSON or JACCARD
 - Number of neighbors for the KNN algorithm (only applies with user-based filtering). Default value: 51
 - Desired number of recommendations. Default value: 10
 

@@ -46,7 +46,7 @@ The project has an executable in the 'jar' folder. The JAR name is: RS_CF_LastFm
 - Desired number of recommendations. Default value: 10
 
 Execution examples:
-```
+``` console
     java -jar RS_CF_LastFm-v1.jar 1 ../data/in/u.data.csv ../data/out/output.txt USER COSINE 101 20
     java -jar RS_CF_LastFm-v1.jar 10 ../data/in/u.data.csv ../data/out/output.txt ITEM PEARSON 0 10
     java -jar RS_CF_LastFm-v1.jar 10 ../data/in/u.data.csv ../data/out/output.txt ITEM JACCARD

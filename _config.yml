@@ -1,2 +1,5 @@
 title: A Recommender Systems for Last.fm
+description: Recommendation system with collaborative filtering created with Apache Mahout
+show_downloads: true
+google_analytics:
 theme: jekyll-theme-cayman

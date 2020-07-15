@@ -1,20 +1,20 @@
 # Recommender Systems for Last.fm
-Recommendation system with collaborative filtering created with Apache Mahout. The system uses a Music Recommendation Dataset for Research as input, but you can train it and predict recommendations with any other dataset. This project explores the calibration and accuracy of user-based and item-based models.
+Recommender systems with collaborative filtering created with Apache Mahout framework. The system uses a Music Recommendation Dataset for Research as input, but you can train it and predict recommendations with any other dataset. This project explores the calibration and accuracy of user-based and item-based models.
 
 ## Data
 The original dataset contains <user, timestamp, artist, song> tuples collected from Last.fm API, using the user.getRecentTracks() method. This dataset represents the whole listening habits (till May, 5th 2009) for nearly 1,000 users.
 
-This pre-processed dataset contains <user, artist, rating> tuples. The rating field was calculated by normalizing the number of times a user listened to a specific artist's songs in Last.fm.
+The pre-processed dataset below contains <user, artist, rating> tuples. The rating field was calculated by normalizing the number of times a user listened to a specific artist's songs in Last.fm.
 
 Table format: **u.data.csv**
 
 | user id | artist id | rating |
-| -- | -- | -- |
-| 1 | 100001 | 5.0 |
-| 3 | 101943 | 4.6 |
-| 6 | 100906 | 4.3 |
-| 11 | 101722 | 3.6 |
-| 15 | 107070 | 3.9 |
+| --      | --        | --     |
+| 1       | 100001    | 5.0    |
+| 3       | 101943    | 4.6    |
+| 6       | 100906    | 4.3    |
+| 11      | 101722    | 3.6    |
+| 15      | 107070    | 3.9    |
 
 <a href="https://www.dtic.upf.edu/~ocelma/MusicRecommendationDataset/lastfm-1K.html" target="_blank">Permalink</a>
 
@@ -56,18 +56,18 @@ The .JAR program must be run with Java 7 or higher.
 ## Program Output
 Once trained the model, the system can make recommendations (on demand) for users, as follows:
 
-| user id | artist id | rating |
-| -- | -- | -- |
-| 1 | 130710 | 4.366509 |
-| 1 | 114674 | 3.0061495 |
-| 1 | 143895 | 2.9370918 |
-| 1 | 103116 | 2.8950827 |
-| 1 | 104052 | 2.7250140 |
-| 1 | 135747 | 2.6153402 |
-| 1 | 135743 | 2.5869453 |
-| 1 | 102936 | 2.5726979 |
-| 1 | 113273 | 2.5512722 |
-| 1 | 114145 | 2.5447776 |
+| user id | artist id | rating    |
+| --      | --        | --        |
+| 1       | 130710    | 4.366509  |
+| 1       | 114674    | 3.0061495 |
+| 1       | 143895    | 2.9370918 |
+| 1       | 103116    | 2.8950827 |
+| 1       | 104052    | 2.7250140 |
+| 1       | 135747    | 2.6153402 |
+| 1       | 135743    | 2.5869453 |
+| 1       | 102936    | 2.5726979 |
+| 1       | 113273    | 2.5512722 |
+| 1       | 114145    | 2.5447776 |
 
 ## Conclusions
 1. Apache Mahout is an excellent fast development framework for Recommender Systems projects. It has a wide variety of Machine Learning algorithms to make predictions (recommendations) and an extensive list of similarity functions.

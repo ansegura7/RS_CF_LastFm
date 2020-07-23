@@ -1,5 +1,5 @@
 # Recommender Systems for Last.fm
-Recommender systems with collaborative filtering created with Apache Mahout framework. The system uses a Music Recommendation Dataset for Research as input, but you can train it and predict recommendations with any other dataset. This project explores the calibration and accuracy of user-based and item-based models.
+Recommender systems with collaborative filtering created with Apache Mahout framework. The system uses a Music Recommendation dataset for research purposes as input, but you can train it and predict recommendations with any other dataset. This project explores the calibration and accuracy of user-based and item-based models.
 
 ## Data
 The original dataset contains <user, timestamp, artist, song> tuples collected from Last.fm API, using the user.getRecentTracks() method. This dataset represents the whole listening habits (till May, 5th 2009) for nearly 1,000 users.
@@ -16,7 +16,7 @@ Table format: **u.data.csv**
 | 11      | 101722    | 3.6    |
 | 15      | 107070    | 3.9    |
 
-<a href="https://www.dtic.upf.edu/~ocelma/MusicRecommendationDataset/lastfm-1K.html" target="_blank">Permalink</a>
+You can see the original dataset <a href="https://www.upf.edu/web/mtg/lastfm360k" target="_blank">here</a>
 
 ## Model Tuning
 - The training results of the user-based collaborative filtering model are shown below:
